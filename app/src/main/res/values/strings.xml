@@ -35,4 +35,6 @@
     <string name="base">Base</string>
     <string name="ingreseBase">Ingrese base</string>
     <string name="ingreseAltura">Ingrese Altura</string>
+    <string name="errorBase">Ingrese un valor en Base</string>
+    <string name="errorAltura">Ingrese un valor en Altura</string>
 </resources>

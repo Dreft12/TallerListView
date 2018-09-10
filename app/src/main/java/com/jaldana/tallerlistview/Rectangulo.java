@@ -1,5 +1,6 @@
 package com.jaldana.tallerlistview;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
@@ -27,18 +28,24 @@ public class Rectangulo extends AppCompatActivity {
         });
     }
 
+    @SuppressLint("DefaultLocale")
     public void calcular(View v){
-        if (!txtBase.getText().toString().isEmpty() && !txtAltura.getText().toString().isEmpty()){
-            int lado = Integer.parseInt(txtBase.getText().toString().trim());
-            if (lado >= 0){
-                mensaje.setTitle(getResources().getString(R.string.resultado));
-                mensaje.setMessage(getResources().getString(R.string.areaC) + " " + Integer.toString(Metodos.areaCuadrado(lado)));
-                mensaje.show();
+        if (!txtBase.getText().toString().isEmpty()){
+            if (!txtAltura.getText().toString().isEmpty()) {
+                double base = Double.parseDouble(txtBase.getText().toString().trim());
+                double altura = Double.parseDouble(txtAltura.getText().toString().trim());
+                if (base >= 0 && altura >= 0) {
+                    mensaje.setTitle(getResources().getString(R.string.resultado));
+                    mensaje.setMessage(getResources().getString(R.string.areaC) + " " + String.format("%.2f", Metodos.areaRectangulo(base, altura)));
+                    mensaje.show();
+                } else {
+                    Toast.makeText(this, getResources().getText(R.string.errorNegativo), Toast.LENGTH_SHORT).show();
+                }
             }else{
-                Toast.makeText(this, getResources().getText(R.string.errorNegativo), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getResources().getText(R.string.errorAltura), Toast.LENGTH_SHORT).show();
             }
         }else{
-            Toast.makeText(this, getResources().getText(R.string.errorVacio), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getResources().getText(R.string.errorBase), Toast.LENGTH_SHORT).show();
         }
     }
 

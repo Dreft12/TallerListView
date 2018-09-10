@@ -24,6 +24,11 @@ public class Areas extends AppCompatActivity {
                         startActivity(in);
                         break;
                     }
+                    case 1: {
+                        in = new Intent(Areas.this, Rectangulo.class);
+                        startActivity(in);
+                        break;
+                    }
                 }
             }
         });
