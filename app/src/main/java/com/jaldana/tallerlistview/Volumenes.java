@@ -35,7 +35,7 @@ public class Volumenes extends AppCompatActivity {
                         break;
                     }
                     case 3: {
-                        in = new Intent(Volumenes.this, Circulo.class);
+                        in = new Intent(Volumenes.this, Cubo.class);
                         startActivity(in);
                         break;
                     }

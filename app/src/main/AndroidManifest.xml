@@ -24,7 +24,8 @@
         <activity android:name=".Volumenes" />
         <activity android:name=".Esfera" />
         <activity android:name=".Cilindro" />
-        <activity android:name=".Cono"></activity>
+        <activity android:name=".Cono" />
+        <activity android:name=".Cubo"></activity>
     </application>
 
 </manifest>

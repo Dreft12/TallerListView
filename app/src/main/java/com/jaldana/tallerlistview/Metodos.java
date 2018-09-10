@@ -29,4 +29,8 @@ public class Metodos {
     public static double volCono(double radio, double altura){
         return (1 * 3.141592 * Math.pow(radio, 2) * altura) / 3;
     }
+
+    public static double volCubo(double longitud){
+        return Math.pow(longitud,3);
+    }
 }

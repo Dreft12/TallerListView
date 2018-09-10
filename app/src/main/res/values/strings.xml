@@ -54,4 +54,9 @@
     <string name="volR">El volumen es de:</string>
     <string name="radioCilindro">Ingrese radio del Cilindro</string>
     <string name="radioCono">Ingrese radio del Cono</string>
+    <string name="ladoCaraCubo">Ingrese longitud de la cara del cubo</string>
+    <string name="errorCubo">Por favor, ingrese un valor en longitud</string>
+    <string name="salirMensaje">¿Desea salir de la aplicación?</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
 </resources>
