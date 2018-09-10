@@ -13,4 +13,8 @@ public class Metodos {
     public static double areaTriangulo(double base, double altura){
         return (base * altura) / 2;
     }
+
+    public static double areaCirculo(double radio) {
+        return 3.141592 * (radio*radio);
+    }
 }

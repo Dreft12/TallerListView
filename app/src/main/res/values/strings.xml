@@ -28,7 +28,7 @@
         <item>@string/regresar</item>
     </string-array>
     <string name="resultado">Resultado</string>
-    <string name="areaC">Area:</string>
+    <string name="areaC">El area es de:</string>
     <string name="continuar">Continuar</string>
     <string name="regresar">Regresar</string>
     <string name="salir">Salir</string>
@@ -37,4 +37,6 @@
     <string name="ingreseAltura">Ingrese Altura</string>
     <string name="errorBase">Ingrese un valor en Base</string>
     <string name="errorAltura">Ingrese un valor en Altura</string>
+    <string name="ingreseRadio">Ingrese radio de circunferencia</string>
+    <string name="errorRadio">Ingrese un valor en Radio</string>
 </resources>

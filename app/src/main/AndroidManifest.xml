@@ -19,7 +19,8 @@
         <activity android:name=".Areas" />
         <activity android:name=".Cuadrado" />
         <activity android:name=".Rectangulo" />
-        <activity android:name=".Triangulo"></activity>
+        <activity android:name=".Triangulo" />
+        <activity android:name=".Circulo"></activity>
     </application>
 
 </manifest>
