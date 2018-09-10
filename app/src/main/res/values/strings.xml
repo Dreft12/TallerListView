@@ -33,7 +33,7 @@
     <string name="regresar">Regresar</string>
     <string name="salir">Salir</string>
     <string name="base">Base</string>
-    <string name="ingreseBase">Ingrese base</string>
+    <string name="ingreseBase">Ingrese Base</string>
     <string name="ingreseAltura">Ingrese Altura</string>
     <string name="errorBase">Ingrese un valor en Base</string>
     <string name="errorAltura">Ingrese un valor en Altura</string>

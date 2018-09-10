@@ -9,4 +9,8 @@ public class Metodos {
     public static double areaRectangulo(double base, double altura){
         return base * altura;
     }
+
+    public static double areaTriangulo(double base, double altura){
+        return (base * altura) / 2;
+    }
 }

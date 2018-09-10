@@ -29,6 +29,11 @@ public class Areas extends AppCompatActivity {
                         startActivity(in);
                         break;
                     }
+                    case 2: {
+                        in = new Intent(Areas.this, Triangulo.class);
+                        startActivity(in);
+                        break;
+                    }
                 }
             }
         });
