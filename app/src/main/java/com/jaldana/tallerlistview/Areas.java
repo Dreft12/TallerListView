@@ -7,21 +7,20 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-public class Principal extends AppCompatActivity {
+public class Areas extends AppCompatActivity {
+    private ListView lvArea;
     private Intent in;
-    private ListView lv;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_principal);
-        lv = findViewById(R.id.lstOp);
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        setContentView(R.layout.activity_areas);
+        lvArea = findViewById(R.id.lstAreas);
+        lvArea.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                 switch (i) {
                     case 0: {
-                        in = new Intent(Principal.this, Areas.class);
+                        in = new Intent(Areas.this, Cuadrado.class);
                         startActivity(in);
                         break;
                     }

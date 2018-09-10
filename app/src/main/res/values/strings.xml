@@ -8,5 +8,31 @@
         <item>@string/areas</item>
         <item>@string/volumenes</item>
         <item>@string/oprealizadas</item>
+        <item>@string/salir</item>
     </string-array>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="rectangulo">Rectangulo</string>
+    <string name="triangulo">Triangulo</string>
+    <string name="circulo">Circulo</string>
+    <string name="valorLadoCuadrado">Valor del Lado: </string>
+    <string name="ingreseLado">Ingrese un lado del cuadrado</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="errorVacio">Por favor ingrese un valor.</string>
+    <string name="errorNegativo">Por favor ingrese un valor positivo.</string>
+    <string-array name="areaslist">
+        <item>@string/cuadrado</item>
+        <item>@string/rectangulo</item>
+        <item>@string/triangulo</item>
+        <item>@string/circulo</item>
+        <item>@string/regresar</item>
+    </string-array>
+    <string name="resultado">Resultado</string>
+    <string name="areaC">Area:</string>
+    <string name="continuar">Continuar</string>
+    <string name="regresar">Regresar</string>
+    <string name="salir">Salir</string>
+    <string name="base">Base</string>
+    <string name="ingreseBase">Ingrese base</string>
+    <string name="ingreseAltura">Ingrese Altura</string>
 </resources>
