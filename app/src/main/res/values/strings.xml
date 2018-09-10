@@ -39,4 +39,19 @@
     <string name="errorAltura">Ingrese un valor en Altura</string>
     <string name="ingreseRadio">Ingrese radio de circunferencia</string>
     <string name="errorRadio">Ingrese un valor en Radio</string>
+    <string-array name="volList">
+        <item>@string/esfera</item>
+        <item>@string/cilindro</item>
+        <item>@string/cono</item>
+        <item>@string/cubo</item>
+        <item>@string/regresar</item>
+    </string-array>
+    <string name="esfera">Esfera</string>
+    <string name="cilindro">Cilindro</string>
+    <string name="cono">Cono</string>
+    <string name="cubo">Cubo</string>
+    <string name="radioEsfera">Ingrese radio de esfera</string>
+    <string name="volR">El volumen es de:</string>
+    <string name="radioCilindro">Ingrese radio del Cilindro</string>
+    <string name="radioCono">Ingrese radio del Cono</string>
 </resources>
