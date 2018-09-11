@@ -10,7 +10,10 @@ public class Metodos {
     }
 
     public static double areaRectangulo(double base, double altura){
-        return base * altura;
+        double resultado = base * altura;
+        d = new Datos("Area del Rectangulo", "Base: " + base +"\n"+ "Altura: " +altura, resultado);
+        d.guardar();
+        return resultado;
     }
 
     public static double areaTriangulo(double base, double altura){
