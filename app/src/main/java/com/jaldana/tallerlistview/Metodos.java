@@ -1,9 +1,12 @@
 package com.jaldana.tallerlistview;
 
 public class Metodos {
-
+    private static Datos d;
     public static int areaCuadrado(int lado){
-        return lado * lado;
+        int resultado = lado * lado;
+        d = new Datos("Area del Cuadrado", "Lado:" + lado, resultado);
+        d.guardar();
+        return resultado;
     }
 
     public static double areaRectangulo(double base, double altura){

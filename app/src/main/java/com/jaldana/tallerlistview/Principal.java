@@ -46,6 +46,12 @@ public class Principal extends AppCompatActivity {
                         startActivity(in);
                         break;
                     }
+                    case 2: {
+                        in = new Intent(Principal.this, Listar.class);
+                        startActivity(in);
+                        break;
+                    }
+
                     case 3: {
                         mensaje.show();
                         break;

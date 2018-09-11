@@ -25,7 +25,8 @@
         <activity android:name=".Esfera" />
         <activity android:name=".Cilindro" />
         <activity android:name=".Cono" />
-        <activity android:name=".Cubo"></activity>
+        <activity android:name=".Cubo" />
+        <activity android:name=".Listar"></activity>
     </application>
 
 </manifest>
