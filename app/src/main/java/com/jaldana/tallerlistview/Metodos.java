@@ -1,17 +1,14 @@
 package com.jaldana.tallerlistview;
 
 public class Metodos {
-    private static Datos d;
+
     public static int areaCuadrado(int lado){
-        int resultado = lado * lado;
-        d = new Datos("Area del Cuadrado", "Lado:" + lado, resultado);
-        d.guardar();
-        return resultado;
+        return lado * lado;
     }
 
     public static double areaRectangulo(double base, double altura){
         double resultado = base * altura;
-        d = new Datos("Area del Rectangulo", "Base: " + base +"\n"+ "Altura: " +altura, resultado);
+       // d = new Datos("Area del Rectangulo", "Base: " + base +"\n"+ "Altura: " +altura, resultado);
         d.guardar();
         return resultado;
     }
@@ -38,5 +35,12 @@ public class Metodos {
 
     public static double volCubo(double longitud){
         return Math.pow(longitud,3);
+    }
+
+    public static void guardarLista(String nombre, String nombreP, double resultado){
+        Datos.setNombre(nombre);
+        d.setNombreP(nombreP);
+        d.setResultado(resultado);
+        d.guardar();
     }
 }

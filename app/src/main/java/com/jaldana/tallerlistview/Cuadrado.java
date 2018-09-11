@@ -30,8 +30,11 @@ public class Cuadrado extends AppCompatActivity {
         if (!txtLado.getText().toString().isEmpty()){
             int lado = Integer.parseInt(txtLado.getText().toString().trim());
             if (lado >= 0){
+                String nombre = "Area del Cuadrado", nombreP = "Lado:" + lado;
+                int resultado = Metodos.areaCuadrado(lado);
+                Metodos.guardarLista(nombre, nombreP, resultado);
                 mensaje.setTitle(getResources().getString(R.string.resultado));
-                mensaje.setMessage(getResources().getString(R.string.areaC) + " " + Integer.toString(Metodos.areaCuadrado(lado)));
+                mensaje.setMessage(getResources().getString(R.string.areaC) + " " + Integer.toString(resultado));
                 mensaje.show();
             }else{
                 Toast.makeText(this, getResources().getText(R.string.errorNegativo), Toast.LENGTH_SHORT).show();
