@@ -56,7 +56,7 @@
     <string name="salirMensaje">¿Desea salir de la aplicación?</string>
     <string name="si">Sí</string>
     <string name="no">No</string>
-    <string name="nombreOp">Nombre Operacion</string>
+    <string name="nombreOp">Nombre operacion</string>
     <string name="datos">Datos</string>
     <string name="Resultado">Resultado</string>
     <string name="hAreaCuadrado">Area del Cuadrado</string>
