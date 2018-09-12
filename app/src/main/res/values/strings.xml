@@ -15,7 +15,7 @@
     <string name="triangulo">Triangulo</string>
     <string name="circulo">Circulo</string>
     <string name="valorLadoCuadrado">Valor del Lado: </string>
-    <string name="ingreseLado">Ingrese un lado del cuadrado</string>
+    <string name="ingreseLado">Lado: </string>
     <string name="calcular">Calcular</string>
     <string name="limpiar">Limpiar</string>
     <string name="errorVacio">Por favor ingrese un valor.</string>
@@ -33,11 +33,11 @@
     <string name="regresar">Regresar</string>
     <string name="salir">Salir</string>
     <string name="base">Base</string>
-    <string name="ingreseBase">Ingrese Base</string>
-    <string name="ingreseAltura">Ingrese Altura</string>
+    <string name="ingreseBase">Base: </string>
+    <string name="ingreseAltura">Altura: </string>
     <string name="errorBase">Ingrese un valor en Base</string>
     <string name="errorAltura">Ingrese un valor en Altura</string>
-    <string name="ingreseRadio">Ingrese radio de circunferencia</string>
+    <string name="ingreseRadio">Radio: </string>
     <string name="errorRadio">Ingrese un valor en Radio</string>
     <string-array name="volList">
         <item>@string/esfera</item>
@@ -50,11 +50,8 @@
     <string name="cilindro">Cilindro</string>
     <string name="cono">Cono</string>
     <string name="cubo">Cubo</string>
-    <string name="radioEsfera">Ingrese radio de esfera</string>
     <string name="volR">El volumen es de:</string>
-    <string name="radioCilindro">Ingrese radio del Cilindro</string>
-    <string name="radioCono">Ingrese radio del Cono</string>
-    <string name="ladoCaraCubo">Ingrese longitud de la cara del cubo</string>
+    <string name="ladoCaraCubo">Lado: </string>
     <string name="errorCubo">Por favor, ingrese un valor en longitud</string>
     <string name="salirMensaje">¿Desea salir de la aplicación?</string>
     <string name="si">Sí</string>
@@ -62,4 +59,12 @@
     <string name="nombreOp">Nombre Operacion</string>
     <string name="datos">Datos</string>
     <string name="Resultado">Resultado</string>
+    <string name="hAreaCuadrado">Area del Cuadrado</string>
+    <string name="hAreaRectangulo">Area del Rectangulo</string>
+    <string name="hAreaTriangulo">Area del Triangulo</string>
+    <string name="hAreaCirculo">Area del Circulo</string>
+    <string name="hVolEsfera">Volumen Esfera</string>
+    <string name="hVolCilindro">Volumen Cilindro</string>
+    <string name="hVolCono">Volumen Cono</string>
+    <string name="hVolCubo">Volumen Cubo</string>
 </resources>

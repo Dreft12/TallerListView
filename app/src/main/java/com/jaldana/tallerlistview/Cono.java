@@ -33,8 +33,12 @@ public class Cono extends AppCompatActivity {
                 double radio = Double.parseDouble(txtRadio.getText().toString().trim());
                 double altura = Double.parseDouble(txtAltura.getText().toString().trim());
                 if (radio >= 0 && altura >= 0) {
+                    double resultado =  Metodos.volCono(radio, altura);
+                    Metodos.guardarHistorialLista(getResources().getString(R.string.hVolCono),
+                            getResources().getString(R.string.ingreseRadio) + radio + "\n" +
+                                    getResources().getString(R.string.ingreseAltura) + altura, resultado);
                     mensaje.setTitle(getResources().getString(R.string.resultado));
-                    mensaje.setMessage(getResources().getString(R.string.areaC) + " " + String.format("%.2f", Metodos.volCono(radio, altura)));
+                    mensaje.setMessage(getResources().getString(R.string.areaC) + " " + String.format("%.2f", resultado));
                     mensaje.show();
                 } else {
                     Toast.makeText(this, getResources().getText(R.string.errorNegativo), Toast.LENGTH_SHORT).show();

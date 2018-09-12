@@ -1,16 +1,13 @@
 package com.jaldana.tallerlistview;
 
 public class Metodos {
-
+    private static Datos d;
     public static int areaCuadrado(int lado){
         return lado * lado;
     }
 
     public static double areaRectangulo(double base, double altura){
-        double resultado = base * altura;
-       // d = new Datos("Area del Rectangulo", "Base: " + base +"\n"+ "Altura: " +altura, resultado);
-        d.guardar();
-        return resultado;
+        return base * altura;
     }
 
     public static double areaTriangulo(double base, double altura){
@@ -37,10 +34,8 @@ public class Metodos {
         return Math.pow(longitud,3);
     }
 
-    public static void guardarLista(String nombre, String nombreP, double resultado){
-        Datos.setNombre(nombre);
-        d.setNombreP(nombreP);
-        d.setResultado(resultado);
+    public static void guardarHistorialLista(String nombre, String nombreP, double resultado){
+        d = new Datos(nombre, nombreP, resultado);
         d.guardar();
     }
 }

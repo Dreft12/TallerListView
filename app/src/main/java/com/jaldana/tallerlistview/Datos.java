@@ -5,8 +5,10 @@ public class Datos {
     private String nombreP;
     private double resultado;
 
-    public Datos() {
-
+    public Datos(String nombre, String nombreP, double resultado) {
+        this.nombre = nombre;
+        this.nombreP = nombreP;
+        this.resultado = resultado;
     }
 
     public  String getNombre() {

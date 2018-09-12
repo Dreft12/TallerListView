@@ -30,8 +30,11 @@ public class Cubo extends AppCompatActivity {
         if (!txtLong.getText().toString().isEmpty()){
             double longitud = Double.parseDouble(txtLong.getText().toString().trim());
             if (longitud >= 0 ) {
+                double resultado = Metodos.volCubo(longitud);
+                Metodos.guardarHistorialLista(getResources().getString(R.string.hVolCubo),
+                        getResources().getString(R.string.ingreseLado) + longitud , resultado);
                 mensaje.setTitle(getResources().getString(R.string.resultado));
-                mensaje.setMessage(getResources().getString(R.string.volR) + " " + String.format("%.2f", Metodos.volCubo(longitud)));
+                mensaje.setMessage(getResources().getString(R.string.volR) + " " + String.format("%.2f", resultado));
                 mensaje.show();
             } else {
                 Toast.makeText(this, getResources().getText(R.string.errorNegativo), Toast.LENGTH_SHORT).show();

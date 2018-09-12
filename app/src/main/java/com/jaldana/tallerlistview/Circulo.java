@@ -30,8 +30,11 @@ public class Circulo extends AppCompatActivity {
         if (!txtRadio.getText().toString().isEmpty()){
                 double radio = Double.parseDouble(txtRadio.getText().toString().trim());
                 if (radio >= 0 ) {
+                    double resultado = Metodos.areaCirculo(radio);
+                    Metodos.guardarHistorialLista(getResources().getString(R.string.hAreaCirculo),
+                            getResources().getString(R.string.ingreseRadio) + radio , resultado);
                     mensaje.setTitle(getResources().getString(R.string.resultado));
-                    mensaje.setMessage(getResources().getString(R.string.areaC) + " " + String.format("%.2f", Metodos.areaCirculo(radio)));
+                    mensaje.setMessage(getResources().getString(R.string.areaC) + " " + String.format("%.2f", resultado));
                     mensaje.show();
                 } else {
                     Toast.makeText(this, getResources().getText(R.string.errorNegativo), Toast.LENGTH_SHORT).show();

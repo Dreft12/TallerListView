@@ -35,8 +35,12 @@ public class Rectangulo extends AppCompatActivity {
                 double base = Double.parseDouble(txtBase.getText().toString().trim());
                 double altura = Double.parseDouble(txtAltura.getText().toString().trim());
                 if (base >= 0 && altura >= 0) {
+                    double resultado = Metodos.areaRectangulo(base, altura);
+                    Metodos.guardarHistorialLista(getResources().getString(R.string.hAreaRectangulo),
+                            getResources().getString(R.string.ingreseBase) + base + "\n"+
+                            getResources().getString(R.string.ingreseAltura) + altura, resultado);
                     mensaje.setTitle(getResources().getString(R.string.resultado));
-                    mensaje.setMessage(getResources().getString(R.string.areaC) + " " + String.format("%.2f", Metodos.areaRectangulo(base, altura)));
+                    mensaje.setMessage(getResources().getString(R.string.areaC) + " " + String.format("%.2f", resultado));
                     mensaje.show();
                 } else {
                     Toast.makeText(this, getResources().getText(R.string.errorNegativo), Toast.LENGTH_SHORT).show();
